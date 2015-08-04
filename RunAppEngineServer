@@ -1,4 +1,10 @@
+#!/bin/bash
+
 # kmbrlynn April 2015
 # Run the main App Inventor server
 # find current AppEngine Java SDK at: http://cloud.google.com/appengine/downloads
-/opt/appengine-java-sdk-1.9.19/bin/dev_appserver.sh --port=8888 --address=0.0.0.0 appinventor-sources/appinventor/appengine/build/war
+
+ai=/home/kmbrlynn/Repos/appinventor-sources/appinventor
+javasdk=/opt/appengine-java-sdk-1.9.19
+
+$javasdk/bin/dev_appserver.sh --port=8888 --address=0.0.0.0 $ai/appengine/build/war/
